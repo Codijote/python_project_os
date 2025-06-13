@@ -1,0 +1,27 @@
+[project]
+#name = "OpenSourceLinkedin"
+name = "reminder"
+version = "0.1.0"
+description = "This is an Open Source Project"
+authors = [
+    {name = "Navarro Daniel"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "click (==8.1.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.0"
+black = "^25.1.0"
+flake8 = "^7.2.0"
+pre-commit = "^4.2.0"
+tox = "^4.26.0"
+
